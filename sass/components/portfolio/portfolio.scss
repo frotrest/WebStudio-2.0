@@ -1,0 +1,42 @@
+@import './header';
+@import './footer';
+@import './main/main-styles';
+
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.container {
+    width: 320px;
+    padding: 0px 15px;
+    margin: 0px auto;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media (min-width: 480px) {
+    .container {
+        width: 320px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}

@@ -1,0 +1,139 @@
+.header--portfolio {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    @media (min-width: 768px) {
+        & {
+            padding-top: 26px;
+            padding-bottom: 26px;
+        }
+    }
+    .header-content--portfolio {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo-nav--portfolio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media (min-width: 768px) {
+                & {
+                    gap: 90px;
+                }
+            }
+            .header-logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                .web {
+                    color: #2196F3;
+                    font-family: 'Raleway';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                }
+                .webstudio {
+                    color: #212121;
+                    font-family: 'Raleway';
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.72px;
+                }
+            }
+            .nav-bar--portfolio {
+                display: none;
+                @media (min-width: 768px) {
+                    & {
+                        display: flex;
+                        align-items: center;
+                        gap: 56px;
+                    }
+                }
+                .nav-bar__item--portfolio {
+                    color: #212121;
+                    font-family: 'Roboto';
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: normal;
+                    letter-spacing: 0.28px;
+                    text-decoration: none;
+                    position: relative;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                    &:hover {
+                        color: #2196F3;
+                    }
+                    &:hover::before {
+                        width: 100%;
+                        left: 0;
+                    }
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        width: 0;
+                        left: 50%;
+                        right: 50%;
+                        bottom: 0;
+                        top: 0;
+                        height: 4px;
+                        border-radius: 2px;
+                        background-color: #2196F3;
+                        transition: width 0.3s ease, left 0.3s ease;
+                        margin-top: 32px;
+                    }
+                }
+            }
+        }
+        .header-links {
+            display: none;
+            @media (min-width: 768px) {
+                & {
+                    display: flex;
+                    align-items: flex-start;
+                    gap: 10px;
+                    flex-direction: column;
+                    justify-content: center;                
+                }
+            }
+            @media (min-width: 1200px) {
+                & {
+                    display: flex;
+                    align-items: center;
+                    gap: 30px;
+                    flex-direction: row;
+                    justify-content: center;                
+                }
+            }
+            &__item {
+                color: #757575;
+                font-family: 'Roboto';
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: normal;
+                letter-spacing: 0.24px;
+                text-decoration: none;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                &:hover {
+                    color: #2196F3;
+                }
+                &:hover .header-links__item--svg {
+                    fill: #2196F3;
+                }
+            }
+        }
+        .adaptive-link--portfolio {
+            @media (min-width: 768px) {
+                & {
+                    display: none;
+                }
+            }
+        }
+    }
+}
