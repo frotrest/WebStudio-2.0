@@ -1,5 +1,13 @@
 .hero {
-    background: url(../icons/background.png) no-repeat center / cover;
+    background: url(../icons/mobile-hero.png) no-repeat center / cover;
+    @media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  & {
+    background-image: url("../icons/mobile-hero@2x.png") no-repeat center / cover;
+  }
+}
     .hero-content {
         display: flex;
         align-items: center;
@@ -54,8 +62,10 @@
             background-color: #2196F3;
             box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
             border: none;
+            transition: color 0.3s ease;
             &:hover {
                 cursor: pointer;
+                color: aqua;
             }
         }
     }

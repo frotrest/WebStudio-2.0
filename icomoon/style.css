@@ -5,6 +5,11 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.client:hover .icon {
+  fill: #2196F3;
 }
 
 /* ==========================================
@@ -16,54 +21,64 @@ Single-colored icons can be modified like so:
 ========================================== */
 
 .icon-group {
-  width: 65.32px;
-  height: 70px;
-}
-
-@media (max-width) {
-  .icon-group {
-    width: 354px;
-    height: 120px;
-  }
-}
-
-.icon-clock {
-  width: 65.32px;
-  height: 70px;
-}
-
-.icon-diagram {
-  width: 65.32px;
-  height: 70px;
-}
-
-.icon-astronaut {
-  width: 65.32px;
-  height: 70px;
+  width: 70px;
+height: 70px;
+fill: #AFB1B8;
 }
 
 .icon-box {
-  width: 2.13671875em;
+  width: 100px;
+height: 60px;
+fill: #afb1b8;
 }
 
 .icon-brand {
-  width: 1.369140625em;
+  width: 100px;
+height: 60px;
+fill: #afb1b8;
 }
 
 .icon-foster {
-  width: 2.0732421875em;
+  width: 100px;
+height: 60px;
+fill: #afb1b8;
 }
 
 .icon-apple {
-  width: 1.0732421875em;
+  width: 100px;
+height: 60px;
+fill: #afb1b8;
 }
 
 .icon-company {
-  width: 0.76953125em;
+  width: 100px;
+height: 60px;
+fill: #afb1b8;
 }
 
 .icon-union {
-  width: 1.0517578125em;
+  width: 60px;
+height: 60px;
+fill: #afb1b8;
+}
+
+.icon-man {
+  width: 100px;
+height: 60px;
+}
+
+.icon-pc {
+  width: 1.33984375em;
+}
+
+.icon-clock {
+  width: 70px;
+height: 70px;
+}
+
+.icon-air {
+  width: 70px;
+height: 70px;
 }
 
 .icon-envelope {
@@ -71,41 +86,35 @@ Single-colored icons can be modified like so:
   height: 12px;
 }
 
+.link:hover .icon-envelope {
+  fill: #2196F3;
+}
+
+
 .icon-smartphone {
   width: 10px;
   height: 16px;
 }
 
+.icon-diagram {
+  width: 70px;
+  height: 70px;
+}
+
+.icon-close-black {
+  width: 18px;
+  height: 18px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .link-port {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 12px 12px 12px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  border-radius: 50%;
+  padding: 15px 16px;
+  transition: background-color 0.3s ease;
+  border-radius: 100%;
 }
 
 .link-port:hover {
   background-color: #2196F3;
-  cursor: pointer;
-}
-
-.link-port:hover .icon-instagram {
-  fill: white;
-}
-
-.link-port:hover .icon-twitter {
-  fill: white;
-  cursor: pointer;
-}
-
-.link-port:hover .icon-facebook {
-  fill: white;
-  cursor: pointer;
-}
-
-.link-port:hover .icon-linkedin2 {
-  fill: white;
   cursor: pointer;
 }
 
@@ -127,113 +136,95 @@ Single-colored icons can be modified like so:
   height: 20px;
 }
 
+.icon-facebook {
+  fill: #AFB1B8;
+  width: 20px;
+  height: 20px;
+}
+
 .icon-linkedin2 {
   fill: #AFB1B8;
   width: 20px;
   height: 20px;
 }
 
-.icon-union {
-  fill: #AFB1B8;
-  width: 41px;
-  height: 38.81px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.link-port:hover .icon-twitter {
+  fill: white;
 }
 
-.client:hover .icon-union {
-  fill: #2196F3;
+.link-port:hover .icon-instagram {
+  fill: white;
 }
 
-.icon-company {
-  fill: #AFB1B8;
+.link-port:hover .icon-facebook {
+  fill: white;
+}
+
+.link-port:hover .icon-linkedin2 {
+  fill: white;
+}
+
+.icon-close-box-styles:hover .icon-close-black {
+fill: #2196F3;
+cursor: pointer;
+}
+
+.icon-menu {
   width: 40px;
-  height: 52px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  height: 40px;
 }
 
-.client:hover .icon-company {
-  fill: #2196F3;
-} 
-
-.icon-apple {
-  fill: #AFB1B8;
-  width: 43.46px;
-  height: 41.18px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.icon-pc {
+  width: 70px;
+  height: 70px;
 }
 
-.client:hover .icon-apple {
-  fill: #2196F3;
-} 
-
-.icon-foster {
-  fill: #AFB1B8;
-  width: 84.44px;
-  height: 40.62px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client:hover .icon-foster {
-  fill: #2196F3;
-}
-
-.icon-brand {
-  fill: #AFB1B8;
-  width: 62.54px;
-  height: 45.43px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client:hover .icon-brand {
-  fill: #2196F3;
-}
-
-.icon-box {
-  fill: #AFB1B8;
-  width: 93.79px;
-  height: 43.93px;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.client:hover .icon-box {
-  fill: #2196F3;
+.icon-astronaut {
+  width: 70px;
+  height: 70px;
 }
 
 .icon-instagram-footer {
-  fill: rgb(255, 255, 255);
+  fill: white;
   width: 20px;
   height: 20px;
 }
 
 .icon-twitter-footer {
-  fill: rgb(255, 255, 255);
+  fill: white;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook-footer {
-  fill: rgb(255, 255, 255);
+  fill: white;
   width: 20px;
   height: 20px;
 }
 
 .icon-linkedin2-footer {
-  fill: rgb(255, 255, 255);
+  fill: white;
   width: 20px;
   height: 20px;
 }
 
-.link-footer {
-  display: flex;
-  align-items: center;
-  background-color: rgba(255, 255, 255, 0.1);
-  padding: 12px 12px 12px 12px;
-  border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.icon-icon-send {
+  height: 24px;
+  width: 24px;
 }
 
-.link-footer:hover {
-  background-color: rgb(33, 150, 243);
-  cursor: pointer;
-  transition: 0.3s ease;
+.icon-close-black:nth-child(1) {
+  height: 40px;
+  width: 40px;
+}
+
+.icon-close-black-modal {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-close-box-styles:hover .icon-close-black-modal {
+  fill: #188ce8;
 }

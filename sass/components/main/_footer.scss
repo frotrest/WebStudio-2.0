@@ -59,6 +59,11 @@
                         align-items: center;
                     }
                 }
+                @media (min-width: 1200px) {
+                    & {
+                        align-items: flex-start;
+                    }
+                }
                 &__map {
                     color: #FFF;
                     font-family: 'Roboto';
@@ -94,6 +99,7 @@
             @media (min-width: 1200px) {
                 & {
                     padding-bottom: 45px;
+                    align-items: flex-start;
                 }
             }
             &__title {
@@ -136,6 +142,11 @@
                     align-items: center;
                 }
             }
+            @media (min-width: 1200px) {
+                & {
+                    align-items: flex-start;
+                }
+            }
             &__title {
                 color: #FFF;
                 font-family: 'Roboto';
@@ -151,9 +162,9 @@
                 flex-direction: column;
                 align-items: center;
                 gap: 20px;.footer--portfolio {
-    background-color: #212121;
-    padding-top: 60px;
-    padding-bottom: 60px;
+                background-color: #212121;
+                padding-top: 60px;
+                padding-bottom: 60px;
     .footer-content--portfolio {
         display: flex;
         justify-content: center;
