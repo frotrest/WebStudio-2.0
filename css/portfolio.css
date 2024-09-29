@@ -494,7 +494,7 @@
 .cards--portfolio .cards-content--portfolio .card--portfolio .card--overlay .card--overlay__drop-menu {
   color: #FFF;
   font-family: "Roboto";
-  font-size: 15px;
+  font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: 28px; /* 155.556% */
@@ -512,7 +512,7 @@
 }
 @media (min-width: 768px) {
   .cards--portfolio .cards-content--portfolio .card--portfolio .card--overlay .card--overlay__drop-menu {
-    padding: 58px 25px;
+    padding: 65px 25px;
     font-size: 18px;
   }
 }
