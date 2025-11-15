@@ -6,23 +6,18 @@
     <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="./icomoon/style.css" />
-    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header class="header">
-      <div class="container header-content">
+      <div class="container header-content" data-animate="fadeIn">
         <div class="logo-nav">
           <div class="logo">
             <span class="logo__web">Web</span
@@ -45,8 +40,8 @@
           </nav>
         </div>
         <div class="links">
-          <a href="mailto:info@devstudio.com" class="link"
-            ><svg class="icon icon-envelope">
+          <a href="mailto:info@devstudio.com" class="link">
+            <svg class="icon icon-envelope">
               <use
                 xlink:href="./icomoon/symbol-defs.svg#icon-envelope"
               ></use></svg
@@ -69,7 +64,7 @@
     </header>
     <main>
       <section class="hero">
-        <div class="container hero-content">
+        <div class="container hero-content" data-animate="fadeInUp">
           <h1 class="hero-content__title">
             Ефективні рішення для <br />
             вашого бізнесу
@@ -79,7 +74,7 @@
       </section>
       <section class="company">
         <div class="container company-content">
-          <div class="info">
+          <div class="info" data-animate="fadeInLeft">
             <div class="svg">
               <svg class="icon icon-air">
                 <use xlink:href="./icomoon/symbol-defs.svg#icon-air"></use>
@@ -91,7 +86,7 @@
               формування позиції.
             </p>
           </div>
-          <div class="info">
+          <div class="info" data-animate="fadeInLeft">
             <div class="svg">
               <svg class="icon icon-clock">
                 <use xlink:href="./icomoon/symbol-defs.svg#icon-clock"></use>
@@ -103,7 +98,7 @@
               у себе.
             </p>
           </div>
-          <div class="info">
+          <div class="info" data-animate="fadeInRight">
             <div class="svg">
               <svg class="icon icon-pc">
                 <use xlink:href="./icomoon/symbol-defs.svg#icon-pc"></use>
@@ -114,7 +109,7 @@
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </div>
-          <div class="info">
+          <div class="info" data-animate="fadeInRight">
             <div class="svg">
               <svg class="icon icon-astronaut">
                 <use
@@ -132,12 +127,15 @@
       </section>
       <section class="work">
         <div class="container work-content">
-          <h2 class="work-content__title">Чим ми займаємося</h2>
-          <div class="imgs-work">
+          <h2 class="work-content__title" data-animate="fadeInLeft">Чим ми займаємося</h2>
+          <div class="imgs-work" data-animate="fadeInRight">
             <figure class="imgwork">
               <picture>
-                <source srcset="./icons/box-2.png 1x, ./icons/box-2@2x.png 2x" media="(min-width: 1200px)"/>
-                <img src="./icons/box-2.png" alt="box-1" class="imgwork__img"/>
+                <source
+                  srcset="./icons/box-2.png 1x, ./icons/box-2@2x.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./icons/box-2.png" alt="box-1" class="imgwork__img" />
               </picture>
               <figcaption class="imgwork__descrip">
                 Десктопні додатки
@@ -145,15 +143,21 @@
             </figure>
             <figure class="imgwork">
               <picture>
-                <source srcset="./icons/box-1.png 1x, ./icons/box-1@2x.png 2x" media="(min-width: 1200px)"/>
-                <img src="./icons/box-1.png" alt="box-2" class="imgwork__img"/>
+                <source
+                  srcset="./icons/box-1.png 1x, ./icons/box-1@2x.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./icons/box-1.png" alt="box-2" class="imgwork__img" />
               </picture>
               <figcaption class="imgwork__descrip">Мобільні додатки</figcaption>
             </figure>
             <figure class="imgwork">
               <picture>
-                <source srcset="./icons/box-3.png 1x, ./icons/box-3@2x.png 2x" media="(min-width: 1200px)"/>
-                <img src="./icons/box-3.png" alt="box-3" class="imgwork__img"/>
+                <source
+                  srcset="./icons/box-3.png 1x, ./icons/box-3@2x.png 2x"
+                  media="(min-width: 1200px)"
+                />
+                <img src="./icons/box-3.png" alt="box-3" class="imgwork__img" />
               </picture>
               <figcaption class="imgwork__descrip">
                 Дизайнерські рішення
@@ -164,14 +168,29 @@
       </section>
       <section class="command">
         <div class="container command-content">
-          <h2 class="command-content__title">Наша команда</h2>
-          <div class="cards">
+          <h2 class="command-content__title" data-animate="fadeInRight">Наша команда</h2>
+          <div class="cards" data-animate="fadeInLeft">
             <div class="card">
               <picture>
-                <source srcset="./icons/igor-dekstop.jpg 1x, ./icons/igor-dekstop@2x.jpg 2x" media="(min-width: 1200px)"/>
-                <source srcset="./icons/igor-table.jpg 1x, ./icons/igor-table@2x.jpg 2x" media="(min-width: 768px)"/>
-                <source srcset="./icons/igor.jpg 1x, ./icons/igor@2x.jpg 2x" media="(min-width: 320px)"/>
-                <img src="./icons/igor.jpg" alt="igor" class="card__img"/>
+                <source
+                  srcset="
+                    ./icons/igor-dekstop.jpg    1x,
+                    ./icons/igor-dekstop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./icons/igor-table.jpg    1x,
+                    ./icons/igor-table@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./icons/igor.jpg 1x, ./icons/igor@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./icons/igor.jpg" alt="igor" class="card__img" />
               </picture>
               <h5 class="card__title">Ігор Дем'яненко</h5>
               <p class="card__descrip">Product Designer</p>
@@ -208,10 +227,25 @@
             </div>
             <div class="card">
               <picture>
-                <source srcset="./icons/irina-dekstop.jpg 1x, ./icons/irina-dekstop@2x.jpg 2x" media="(min-width: 1200px)"/>
-                <source srcset="./icons/irina-table.jpg 1x, ./icons/irina-table@2x.jpg 2x" media="(min-width: 768px)"/>
-                <source srcset="./icons/irina.jpg 1x, ./icons/irina@2x.jpg 2x" media="(min-width: 320px)"/>
-                <img src="./icons/irina.jpg" alt="irina" class="card__img"/>
+                <source
+                  srcset="
+                    ./icons/irina-dekstop.jpg    1x,
+                    ./icons/irina-dekstop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./icons/irina-table.jpg    1x,
+                    ./icons/irina-table@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./icons/irina.jpg 1x, ./icons/irina@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./icons/irina.jpg" alt="irina" class="card__img" />
               </picture>
               <h5 class="card__title">Ольга Рєпіна</h5>
               <p class="card__descrip">Frontend Developer</p>
@@ -248,10 +282,25 @@
             </div>
             <div class="card">
               <picture>
-                <source srcset="./icons/ktoto-dekstop.jpg 1x, ./icons/ktoto-dekstop@2x.jpg 2x" media="(min-width: 1200px)"/>
-                <source srcset="./icons/ktoto-table.jpg 1x, ./icons/ktoto-table@2x.jpg 2x" media="(min-width: 768px)"/>
-                <source srcset="./icons/ktoto.jpg 1x, ./icons/ktoto@2x.jpg 2x" media="(min-width: 320px)"/>
-                <img src="./icons/ktoto.jpg" alt="mikola" class="card__img"/>
+                <source
+                  srcset="
+                    ./icons/ktoto-dekstop.jpg    1x,
+                    ./icons/ktoto-dekstop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./icons/ktoto-table.jpg    1x,
+                    ./icons/ktoto-table@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./icons/ktoto.jpg 1x, ./icons/ktoto@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img src="./icons/ktoto.jpg" alt="mikola" class="card__img" />
               </picture>
               <h5 class="card__title">Микола Тарасов</h5>
               <p class="card__descrip">Marketing</p>
@@ -288,11 +337,30 @@
             </div>
             <div class="card">
               <picture>
-              <source srcset="./icons/mixaylo-dekstop.jpg 1x, ./icons/mixaylo-dekstop@2x.jpg 2x" media="(min-width: 1200px)"/>
-              <source srcset="./icons/mixaylo-table.jpg 1x, ./icons/mixaylo-table@2x.jpg 2x" media="(min-width: 768px)"/>
-              <source srcset="./icons/mixaylo.jpg 1x, ./icons/mixaylo@2x.jpg 2x" media="(min-width: 320px)"/>
-              <img src="./icons/mixaylo.jpg" alt="mixaylo" class="card__img"/>
-            </picture>
+                <source
+                  srcset="
+                    ./icons/mixaylo-dekstop.jpg    1x,
+                    ./icons/mixaylo-dekstop@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./icons/mixaylo-table.jpg    1x,
+                    ./icons/mixaylo-table@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="./icons/mixaylo.jpg 1x, ./icons/mixaylo@2x.jpg 2x"
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./icons/mixaylo.jpg"
+                  alt="mixaylo"
+                  class="card__img"
+                />
+              </picture>
               <h5 class="card__title">Михайло Єрмаков</h5>
               <p class="card__descrip">UI Designer</p>
               <div class="links-port">
@@ -330,7 +398,7 @@
         </div>
       </section>
       <section class="partners">
-        <div class="container partners-content">
+        <div class="container partners-content" data-animate="fadeInLeft">
           <h2 class="partners-content__title">Постійні клієнти</h2>
           <div class="clients">
             <div class="client">
@@ -368,7 +436,7 @@
       </section>
     </main>
     <footer class="footer" id="footer">
-      <div class="container footer-content">
+      <div class="container footer-content" data-animate="fadeInUp">
         <div class="footer-help">
           <h4 class="footer-help__logo">
             <span class="footer-help__logo--web">Web</span>Studio
@@ -601,6 +669,6 @@
         </form>
       </div>
     </div>
-    <script src="./index.js"></script>
+    <script type="module" src="./js/main.js"></script>
   </body>
 </html>
