@@ -1,0 +1,2 @@
+import"./assets/reset-CALcgE9i.js";document.addEventListener("DOMContentLoaded",()=>{try{const t=document.querySelectorAll("[data-animate]"),n=new IntersectionObserver((a,o)=>{a.forEach(e=>{if(e.isIntersecting&&e.target instanceof Element){const r=e.target.dataset.animate;e.target.classList.add("animate__animated",`animate__${r}`),o.unobserve(e.target)}})},{root:null,threshold:.1});t.forEach(a=>{n.observe(a)})}catch(t){console.log(`Ошибка с анимациями: ${t}`)}});
+//# sourceMappingURL=portfolio.js.map
