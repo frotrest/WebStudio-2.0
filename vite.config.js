@@ -38,13 +38,9 @@ export default defineConfig(({ command }) => {
     },
     css: {
       postcss: {
-        plugins: [
-          sortMediaQueries({ sort: 'mobile-first' })
-        ]
-      }
+        plugins: [sortMediaQueries({ sort: 'mobile-first' })],
+      },
     },
-    plugins: [
-      FullReload(['./src/**/**.html'])
-    ],
+    plugins: [FullReload(['./src/**/**.html'])],
   };
 });
