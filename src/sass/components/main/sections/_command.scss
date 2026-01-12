@@ -1,90 +1,93 @@
 .command {
-    background-color: #F5F4FA;
-    padding-top: 60px;
-    padding-bottom: 60px;
-    .command-content {
+  background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  .command-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    &__title {
+      color: #212121;
+      font-family: 'Roboto';
+      font-size: 28px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 0.84px;
+      @media (min-width: 1200px) {
+        & {
+          font-size: 36px;
+        }
+      }
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      .card {
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 30px;
+        border-radius: 0px 0px 4px 4px;
+        background-color: #fff;
+        padding-bottom: 35px;
+        box-shadow:
+          0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+          0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+          0px 2px 1px 0px rgba(0, 0, 0, 0.2);
+        &__img {
+          width: 270px;
+          height: 260px;
+          @media (min-width: 480px) {
+            & {
+              width: 270px;
+              height: 260px;
+            }
+          }
+          @media (min-width: 768px) {
+            & {
+              width: 270px;
+              height: 260px;
+            }
+          }
+          @media (min-width: 1200px) {
+            & {
+              width: 270px;
+              height: 260px;
+            }
+          }
+        }
         &__title {
-            color: #212121;
-            font-family: 'Roboto';
-            font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            letter-spacing: 0.84px;
-            @media (min-width: 1200px) {
-                & {
-                    font-size: 36px;
-                }
-            }
+          margin-top: 30px;
+          color: #212121;
+          font-family: 'Roboto';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.48px;
         }
-        .cards {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            .card {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                border-radius: 0px 0px 4px 4px;
-                background-color: #FFF;
-                padding-bottom: 35px;
-                box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
-                &__img {
-                    width: 270px;
-                    height: 260px;
-                    @media (min-width: 480px) {
-                        & {
-                            width: 270px;
-                            height: 260px;
-                        }
-                    }
-                    @media (min-width: 768px) {
-                        & {
-                            width: 270px;
-                            height: 260px;
-                        }
-                    }
-                    @media (min-width: 1200px) {
-                        & {
-                            width: 270px;
-                            height: 260px;
-                        }
-                    }
-                }
-                &__title {
-                    margin-top: 30px;
-                    color: #212121;
-                    font-family: 'Roboto';
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: normal;
-                    letter-spacing: 0.48px;
-                }
-                &__descrip {
-                    color: #757575;
-                    font-family: 'Roboto';
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: normal;
-                    letter-spacing: 0.48px;
-                    margin-top: 10px;
-                }
-                .links-port {
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    padding-top: 15px;
-                    gap: 10px;
-                }
-            }
+        &__descrip {
+          color: #757575;
+          font-family: 'Roboto';
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.48px;
+          margin-top: 10px;
         }
+        .links-port {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding-top: 15px;
+          gap: 10px;
+        }
+      }
     }
+  }
 }
