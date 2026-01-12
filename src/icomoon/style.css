@@ -9,7 +9,7 @@
 }
 
 .client:hover .icon {
-  fill: #2196F3;
+  fill: #2196f3;
 }
 
 /* ==========================================
@@ -22,49 +22,49 @@ Single-colored icons can be modified like so:
 
 .icon-group {
   width: 70px;
-height: 70px;
-fill: #AFB1B8;
+  height: 70px;
+  fill: #afb1b8;
 }
 
 .icon-box {
   width: 100px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-brand {
   width: 100px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-foster {
   width: 100px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-apple {
   width: 100px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-company {
   width: 100px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-union {
   width: 60px;
-height: 60px;
-fill: #afb1b8;
+  height: 60px;
+  fill: #afb1b8;
 }
 
 .icon-man {
   width: 100px;
-height: 60px;
+  height: 60px;
 }
 
 .icon-pc {
@@ -73,12 +73,12 @@ height: 60px;
 
 .icon-clock {
   width: 70px;
-height: 70px;
+  height: 70px;
 }
 
 .icon-air {
   width: 70px;
-height: 70px;
+  height: 70px;
 }
 
 .icon-envelope {
@@ -87,9 +87,8 @@ height: 70px;
 }
 
 .link:hover .icon-envelope {
-  fill: #2196F3;
+  fill: #2196f3;
 }
-
 
 .icon-smartphone {
   width: 10px;
@@ -114,36 +113,36 @@ height: 70px;
 }
 
 .link-port:hover {
-  background-color: #2196F3;
+  background-color: #2196f3;
   cursor: pointer;
 }
 
 .icon-instagram {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
 .icon-twitter {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
 .icon-facebook {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
 
 .icon-linkedin2 {
-  fill: #AFB1B8;
+  fill: #afb1b8;
   width: 20px;
   height: 20px;
 }
@@ -165,8 +164,8 @@ height: 70px;
 }
 
 .icon-close-box-styles:hover .icon-close-black {
-fill: #2196F3;
-cursor: pointer;
+  fill: #2196f3;
+  cursor: pointer;
 }
 
 .icon-menu {
